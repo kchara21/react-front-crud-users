@@ -1,6 +1,6 @@
 # React Front CRUD Users
 
-## Este proyecto trata de cubrir todos los conceptos y buenas prácticas para el desarrollo de un CRUD y más aún, un sistema de gestión de Usuarios. Aunque cabe mencionar que este sigue escalando...
+## Este proyecto trata de cubrir, con el uso de la librearía React, todos los conceptos y buenas prácticas para el desarrollo de un CRUD y más aún, un sistema de gestión de Usuarios. Aunque cabe mencionar que este sigue escalando...
 
 ### Objetivos:
 

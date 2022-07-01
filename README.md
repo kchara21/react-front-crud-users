@@ -4,7 +4,7 @@
 
 ### Objetivos:
 
-- Gestionar desde el consumo de una API RESTful la informacion de los Usuarios, es decir, obtener, almacenar, editar y eliminar.
+- Gestionar en la interfaz web y desde el consumo de una API RESTful la informacion de los Usuarios, es decir, obtener, almacenar, editar y eliminar.
 - Implementar el estándar abierto JWT (JSON Web Token) para la autenticación y autorización (seguridad) del servicio web. 
 
 
@@ -34,7 +34,7 @@
 
 ### Objectives:
 
-- Manage from the consumption of a RESTful API the information of the Users, that is, obtain, store, edit and delete.
+- Manage in the web interface and from the consumption of a RESTful API the information of the Users, that is, obtain, store, edit and delete.
 - Implement the open standard JWT (JSON Web Token) for the authentication and authorization (security) of the web service.
 
 

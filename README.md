@@ -19,6 +19,15 @@
 - password: Kchara2022
 
 
+## Buenas Practicas:
+- Context
+- Hooks 
+- Modals (para los formularios)
+- Routes
+- Helpers (para los requerimientos HTTP)
+
+
+
 # React Front CRUD Users
 
 ## This project tries to cover all the concepts and good practices for the development of a CRUD and even more than that, a User management system. Although it is worth mentioning that it continues to climb...
@@ -38,6 +47,14 @@
 #### User:
 - username: kalebdavid@hotmail.com
 - password: Kchara2022
+
+
+## Good practices:
+-Context
+- Hooks
+- Modals (for forms)
+- Routes
+- Helpers (for HTTP requests)
 
 
 

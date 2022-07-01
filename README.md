@@ -5,7 +5,7 @@
 ### Objetivos:
 
 - Gestionar en la interfaz web y desde el consumo de una API RESTful la informacion de los Usuarios, es decir, obtener, almacenar, editar y eliminar.
-- Implementar el estándar abierto JWT (JSON Web Token) para la autenticación y autorización (seguridad) del servicio web. 
+- Implementar el estándar abierto JWT (JSON Web Token) desde el front para la autenticación y autorización (seguridad) del servicio web. 
 
 
 ## Herramientas:

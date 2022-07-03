@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import Card from "react-bootstrap/Card";
+import React, { useState } from "react";
+
 import { helpHttp } from "../helpers/helpHttp";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import LoginForm from "../components/LoginForm";
 
 interface error {
   status: string;
@@ -12,7 +12,6 @@ interface error {
 
 const Login = ({ setAuth }: any) => {
   const [form, setForm] = useState({ email: "", clave: "" });
-  const [error, setError] = useState<error | null>(null);
   let navigate = useNavigate();
 
   let apiAuth = helpHttp();
@@ -41,55 +40,19 @@ const Login = ({ setAuth }: any) => {
           localStorage.setItem("user", JSON.stringify(rest));
           navigate("/dashboard");
         } else {
-          setError(res);
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: res.message.message,
+          });
         }
       });
     }
   };
 
-
-
   return (
     <div style={{ padding: "4rem 1rem" }}>
-      <Card
-        style={{
-          maxWidth: "300px",
-          margin: "2rem auto",
-          textAlign: "center",
-          height: "350px",
-        }}
-      >
-        <Card.Body>
-          <Card.Title style={{ textAlign: "center", padding: "2rem" }}>
-            LOGIN
-          </Card.Title>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control 
-                style={{ width: "100%" }}
-                type="email"
-                name="email"
-                placeholder="Enter email"
-                onChange={handleChange}
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Control
-                style={{ width: "100%" }}
-                type="password"
-                name="clave"
-                placeholder="Password"
-                onChange={handleChange}
-              />
-            </Form.Group>
-
-            <Button style={{ width: "100%" }} variant="primary" type="submit">
-              LOGIN
-            </Button>
-          </Form>
-        </Card.Body>
-      </Card>
+     <LoginForm handleChange={handleChange} handleSubmit={handleSubmit}/>
     </div>
   );
 };

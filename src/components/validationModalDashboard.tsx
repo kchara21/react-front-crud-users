@@ -1,6 +1,6 @@
 import React from "react";
 
-export const validationModalDashboard = (form: any,DataToEdit:any) => {
+export const validationModalDashboard = (form: any, dataToEdit: any) => {
   let errors: any = {};
   let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
   let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
@@ -25,16 +25,15 @@ export const validationModalDashboard = (form: any,DataToEdit:any) => {
     errors.email = "El campo EMAIL es incorrecto";
   }
 
-  if (!DataToEdit) {
+  
     if (!form.clave.trim()) {
       errors.clave = "El campo CLAVE es requerido.";
     } else if (!regexPassword.test(form.clave.trim())) {
       errors.clave =
         "La clave debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.";
-      }
-  }else{
-    console.log("datatoEdit",DataToEdit);
-  }
+    }
+  
+
 
   return errors;
 };

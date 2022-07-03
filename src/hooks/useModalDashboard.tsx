@@ -1,16 +1,19 @@
 import React, { useContext, useEffect, useState } from "react";
 import TableDashboardContext from "../context/TableDashboardContext";
 
-export const useModalDashboard = (initialForm: any, validationModalDashboard: any) => {
+export const useModalDashboard = (
+  initialForm: any,
+  validationModalDashboard: any
+) => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState<any>({});
 
-  const {handleShow,setDataToEdit,createData,updateData,dataToEdit }:any = useContext(TableDashboardContext);
+  const { handleShow, setDataToEdit, createData, updateData, dataToEdit }: any =
+    useContext(TableDashboardContext);
 
- 
-  const handleSetForm = (newForm:any)=>{
+  const handleSetForm = (newForm: any) => {
     setForm(newForm);
-  }
+  };
 
   const handleClose = () => {
     handleShow(false);
@@ -21,16 +24,22 @@ export const useModalDashboard = (initialForm: any, validationModalDashboard: an
   const handleSubmit = (e: any) => {
     e.preventDefault();
     handleShow(false);
-    setErrors(validationModalDashboard(form,dataToEdit));
 
-    console.log('errors',errors);
+    if (dataToEdit) {
+      delete errors.clave;
+    }
+
+    setErrors(validationModalDashboard(form, dataToEdit));
+
     if (Object.keys(errors).length === 0) {
       if (form.id === null) {
         createData(form);
       } else {
         updateData(form);
       }
-    };
+    } else {
+      console.log(errors);
+    }
     handleReset(e);
   };
 
@@ -72,6 +81,6 @@ export const useModalDashboard = (initialForm: any, validationModalDashboard: an
     handleChange,
     selectChange,
     handleBlur,
-    handleSetForm
-  }
+    handleSetForm,
+  };
 };

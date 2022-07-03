@@ -7,6 +7,7 @@ const TableRowDashboard = ({ el }: any) => {
     TableDashboardContext
   );
 
+
   return (
     <tr>
       <td>{nombre}</td>

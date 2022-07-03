@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# React Front CRUD Users
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Este proyecto trata de cubrir, con el uso de la librería React, todos los conceptos y buenas prácticas para el desarrollo de un CRUD y más aún, un sistema de gestión de Usuarios. Aunque cabe mencionar que este sigue escalando...
 
-## Available Scripts
+### Objetivos:
 
-In the project directory, you can run:
+- Gestionar en la interfaz web y desde el consumo de una API RESTful la informacion de los Usuarios, es decir, obtener, almacenar, editar y eliminar.
+- Implementar el estándar abierto JWT (JSON Web Token) desde el front para la autenticación y autorización (seguridad) del servicio web. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Herramientas:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Front: React (con TypeScript). 
+- Backend: NodeJS, Express, TypeORM (que puede verse en el proyecto react-back-crud-users)
+- DB: MySql (que puede verse en el proyecto react-back-crud-users)
 
-### `npm test`
+#### Usuario:
+- username: kalebdavid@hotmail.com
+- password: Kchara2022
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Buenas Practicas:
+- Context
+- Hooks 
+- Modals (para los formularios)
+- Routes
+- Helpers (para los requerimientos HTTP)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# React Front CRUD Users
 
-### `npm run eject`
+## This project tries to cover all the concepts and good practices for the development of a CRUD and even more than that, a User management system. Although it is worth mentioning that it continues to climb...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Objectives:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Manage in the web interface and from the consumption of a RESTful API the information of the Users, that is, obtain, store, edit and delete.
+- Implement the open standard JWT (JSON Web Token) for the authentication and authorization (security) of the web service.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Tools:
 
-## Learn More
+- Front: React (with TypeScript).
+- Backend: NodeJS, Express, TypeORM (which can be seen in the react-back-crud-users project)
+- DB: MySql (which can be seen in the react-back-crud-users project)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### User:
+- username: kalebdavid@hotmail.com
+- password: Kchara2022
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Good practices:
+-Context
+- Hooks
+- Modals (for forms)
+- Routes
+- Helpers (for HTTP requests)
+
+
+
